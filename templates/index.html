@@ -3,14 +3,17 @@
 <head>
     <meta charset="utf-8">
     <title>Baixar vídeo do YouTube</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Baixar vídeo do YouTube</h1>
-    <form method="post" action="/">
-        <label for="link">Insira o link do vídeo do YouTube:</label><br>
-        <input type="text" id="link" name="link"><br>
-        <br>
-        <input type="submit" value="Baixar">
-    </form>
+    <div class="container">
+        <h1>Baixar vídeo do YouTube</h1>
+        <form method="post" action="/">
+            <label for="link">Insira o link do vídeo do YouTube:</label>
+            <input type="text" id="link" name="link">
+            <input type="submit" value="Baixar" id="baixar-btn">
+
+        </form>
+    </div>
 </body>
 </html>
